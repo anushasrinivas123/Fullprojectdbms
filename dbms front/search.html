@@ -1,0 +1,69 @@
+{% load static %}
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <style>
+        .body{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            min-height: 720px;
+            min-width: 1500px;
+            background-image: url('{% static "csss/banner_bg.jpg" %}');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        
+        .container .messages{
+            position: absolute;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+<form method="post">
+    {% csrf_token %}
+    <div class="box">
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <label style="color: black; font-size: 20px;">Start date</label>
+            <input type="date" name="sdate" class="form-control" placeholder="">
+        </div>
+        <div class="col-md-6 mb-3">
+            <label style="color: black; font-size: 20px;">End date</label>
+            <input type="date" name="edate" class="form-control" placeholder="">
+            
+        </div>
+        <div class="col-md-6 mb-3">
+            <button type="submit" class="btn btn-danger">Search</button>
+        </div><br><br>
+    
+
+
+    </div>
+</div>
+</form>
+
+
+
+</div>
+{% if messages %}
+    <ul class="messages">
+        {% for k in messages %}
+        <li style="color: black; margin-top: -310px; margin-left: 500px;">{{ k }}</li>
+        {% endfor %}
+    </ul> 
+{% endif %}
+</div>
+
+
+</div>
+</body>
+</html>

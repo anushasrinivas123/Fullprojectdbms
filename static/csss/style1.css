@@ -1,0 +1,51 @@
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    text-decoration: none;
+    color:skyblue;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+
+ul li a:hover{
+    background-color: skyblue;
+    color: black;
+}
+
+ul li.active a{
+    background-color: skyblue;
+    color: black;
+
+}
+main{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.button{
+    position: absolute;
+    top: 60%;
+    right: 79%;
+    
+}
+.btn{
+    border: 1px solid skyblue;
+    padding: 10px 40px;
+    color: white;
+    background-color: skyblue;
+     text-decoration: none;
+}
+
+.btn:hover{
+    background-color: skyblue;
+    color: black;
+}

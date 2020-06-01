@@ -1,0 +1,35 @@
+{% load static %}
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <style>
+        .body{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            min-height: 720px;
+            min-width: 1500px;
+            background-image: url('{% static "csss/hotel5.jpg" %}');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="font-size: 100px; color: pink;margin-top: -300px;">Thank You ......!!!</h1>
+    
+    <div class="button" style="margin-left: -600px; margin-right: 100px;">
+        <a href="userform/RoomType"  class="btn btn-primary btn-lg" >Logout</a>
+        <a href="HotelPnrDisplay" class="btn btn-primary btn-lg">Book again</a>
+    </div>
+    
+    </div>
+
+</body>
+</html>

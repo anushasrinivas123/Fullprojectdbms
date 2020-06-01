@@ -1,0 +1,23 @@
+
+	
+
+.container gallery{
+	margin: 1000px;
+	border: 2px solid #ccc;
+	float: left;
+	width: 600px;
+	height: 500px;
+
+}
+
+.gallery p{
+	color: black;
+	width: 60%;
+	font-size: 30px;
+	position: relative;
+	margin: 0, auto;
+	line-height: 05pt;
+	margin-top: 10px;
+}
+
+
